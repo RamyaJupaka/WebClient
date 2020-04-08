@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Table with Style</title>
+	<link rel="stylesheet" type="text/css" href="css/style11.css"/>
+	<style>
+     td{border:1px solid black;
+padding:10px;}
+h2{padding:5px;
+text-align:center;
+background-color:lightblue;border:3px solid white;}
+h1{padding:5px;
+text-align:center;
+background-color:yellow;}
+h3{
+style="padding:5px;
+text-align:center;
+background-color:pink;
+}
+h4
+{
+style="padding:5px;
+text-align:center;
+background-color:cyan;
+}
+table{width:900px;}
+
+.border_shadow{
+	-webkit-box-shadow:10px 10px 5px black;
+	padding: 5px 5px 5px 15px;
+}
+.border_rounded
+{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 2px solid white;
+	padding: 5px;
+}
+
+
+   </style>
+  </head> 
+  <body>  
+  <table style="border:1px solid black;background-color:gray">
+<tr>
+ <th colspan="7" id="top-table" style="text-align:center">Ramya Jupaka</th>
+</tr>
+<tr>
+<td colspan="3"><h1 class="blue border_shadow border_rounded">light blue</h1></td>
+<td colspan="3"><h1 class="blue border_shadow border_rounded">light blue</h1></td>
+</tr>
+<tr>
+<td rowspan="2"><h1 class="light-salmon border_shadow border_rounded">light salmon</h1></td>
+<td colspan="2"><h3 class="rosa border_shadow border_rounded">blue</h3></td>
+<td colspan="2"><h3 class="rosa border_shadow border_rounded">blue</h3></td>
+    <td rowspan="2"><h1 class="light-salmon border_shadow border_rounded">light salmon</h1></td>
+	</tr> 
+<tr>
+<td><h2 class="red border_shadow border_rounded">salmon</h2></td>
+    <td><h4 class="green border_shadow border_rounded">light green</h4></td>
+    <td><h4 class="green border_shadow border_rounded">light green</h4></td>
+    <td><h2 class="red border_shadow border_rounded">salmon</h2></td>
+	</tr>
+  </table>
+  </body>
+</html>
