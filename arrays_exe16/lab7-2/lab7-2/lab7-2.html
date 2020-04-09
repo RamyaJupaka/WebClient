@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Planet</title>
+	<style>
+		body{
+			background-color: khaki;
+		}
+		#text{
+			background-color: #e0ffff;
+			text-align: center;
+			font-size: 50px;
+			color: blue;
+		}
+
+		#planet{
+			border: 1px solid black;
+			text-align: center;
+		}
+		.nameofplanet{
+			font-weight: bold;
+			font-size: 20px;
+			font-style: normal;
+		}
+		img{
+			margin:20px 0;
+
+		}
+		.show{
+			width: 31%;
+			float: left;
+			border: 1px solid black;
+			margin: 20px 0 30px 0;
+			text-align: center;
+			padding:10px 10px 10px 10px;
+			height: 100px;
+		}
+		
+		.img{
+			width: 31%;
+		}
+	</style>
+</head>
+<body>
+	<div id="text">
+		<p>Our solar system-The Planets</p>
+	</div>
+	<div id="planet">
+			<img src="./images/planets.jpg" alt="Planets" usemap="#planetmap" />
+				<map name="planetmap">
+		 				<area shape="circle" coords="62,153,16" alt="Mercury" href="#Mercury">
+		 				<area shape="circle" coords="115,148,25" alt="Venus" href="#Venus">
+		 				<area shape="circle" coords="188,144,28" alt="Earth" href="#Earth">
+		 			<area shape="circle" coords="253,131,28" alt="Mars" href="#Mars">
+		 				<area shape="circle" coords="465,130,38" alt="Saturn" href="#Saturn">
+		 				<area shape="circle" coords="541,130,23" alt="Uranus" href="#Uranus">
+						<area shape="circle" coords="598,130,17" alt="Neptune" href="#Neptune">
+		 				<area shape="circle" coords="353,125,75" alt="Jupiter" href="#Jupiter">
+		 				<area shape="poly" coords="0,53,50,65,90,95,127,180,120,235,114,265,0,265" href="#Sun" alt="Sun" />
+						<area shape="rect" coords="0,0,800,400" alt="Space" onClick="alert('SPACE')"> 
+				</map>
+		
+	</div>
+	<div style="margin-top: 10px;text-align: center;"><label>Enter the name of planet</label><br><br>	
+		<input id="inputtext" type="text" /><br><br>	
+		<input id="btnsearch" type="button" value="Search" onclick="search()" />
+	</div>
+			
+		<div style="margin-left: 400px;">
+			<div class="show">
+				<a id="name" class="nameofplanet">Plant Name</a>
+				<p id="description">Planet Description</p>
+			</div>
+			<div class="show">
+				
+				<img  id="pic" class="img">
+			</div>
+		</div>
+
+	<script>		
+		
+		function search() 
+		{
+				var text=document.getElementById("inputtext").value;
+				text=text.toLowerCase();
+			if(text=="mercury")
+			{
+				document.getElementById("name").innerHTML="Mercury";
+				document.getElementById("description").innerHTML="Mercury is the closest planet to the Sun. Mercury is slightly smaller in diameter than the moons Ganymede and Titan but more than twice as massive."
+				document.getElementById("pic").src="./images/Mercury.jpg";
+			}
+			else if(text=="venus")
+			{
+				document.getElementById("name").innerHTML="Venus";
+				document.getElementById("description").innerHTML="Venus is the second planet from the Sun, orbiting it every 224.7 Earth days."
+				document.getElementById("pic").src="./images/Venus.jpg";
+			}
+			else if(text=="earth")
+			{
+				document.getElementById("name").innerHTML="Earth";
+				document.getElementById("description").innerHTML="It's the only planet known to have an atmosphere containing free oxygen, oceans of water on its surface and, of course, life";
+				document.getElementById("pic").src="./images/Earth.jpg";
+			}
+			else if(text=="sun")
+			{
+				document.getElementById("name").innerHTML="Sun";
+				document.getElementById("description").innerHTML="The sun lies at the heart of the solar system, where it is by far the largest object. It holds 99.8 percent of the solar system's mass ";
+				document.getElementById("pic").src="./images/Sun.jpg";
+			}
+			else if(text=="mars")
+			{
+				document.getElementById("name").innerHTML="Mars";
+				document.getElementById("description").innerHTML="Mars is a terrestrial planet with a thin atmosphere, having surface features reminiscent both of the impact craters";
+				document.getElementById("pic").src="./images/Mars.jpg";
+			}
+			else if(text=="jupiter")
+			{
+				document.getElementById("name").innerHTML="jupiter";
+				document.getElementById("description").innerHTML="Jupiter is the fifth planet from the Sun and the largest in the Solar System. ";
+				document.getElementById("pic").src="./images/Jupiter.jpg";
+			}
+			else if(text=="uranus")
+			{
+				document.getElementById("name").innerHTML="Uranus";
+				document.getElementById("description").innerHTML="The planet is often dubbed an ice giant, since 80 percent or more of its mass is made up of a fluid mix of water, methane, and ammonia ices. ";
+				document.getElementById("pic").src="./images/Uranus.jpg";
+			}
+			else if(text=="neptune")
+			{
+				document.getElementById("name").innerHTML="Neptune";
+				document.getElementById("description").innerHTML="Despite being smaller than Uranus, Neptune has a greater mass. Below its heavy atmosphere";
+				document.getElementById("pic").src="./images/Neptune.jpg";
+			}
+			else if(text=="saturn")
+			{
+				document.getElementById("name").innerHTML="Saturn";
+				document.getElementById("description").innerHTML="Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. ";
+				document.getElementById("pic").src="./images/Saturn.jpg";
+			}
+			
+		}
+	</script>
+</body>
+</html>
