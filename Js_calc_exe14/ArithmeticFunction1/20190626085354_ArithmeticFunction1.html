@@ -1,0 +1,120 @@
+<html>
+<head>  
+
+  <script type="text/javascript">
+ //var num1=10,num2=20,num3="30",num4="40";
+  var num1=10,num2=20,num3=30,num4=40;
+  function addition(){
+ document.write("Addition<br>");
+	document.write("10+20+20+10="+(num1+num2+num2+num1)+"<br>");
+	document.write("40+20+10="+(num4+num2+num1)+"<br>");
+	document.write("40+20+20+30="+(num4+num2+num2+num3)+"<br>");
+	document.write("10+10+20="+(num1+num1+num2)+"<br>");
+	document.write("10+20+30+40="+(num1+num2+num3+num4)+"<br>");
+	document.write("Conclusion:If one of the two variables are text ,then concatenation else addition"+"<br>");
+   }
+   function substraction(){
+   document.write("Substraction<br>");
+	document.write("10-20-20-10="+(num1-num2-num2-num1)+"<br>");
+	document.write("40-20-10="+(num4-num2-num1)+"<br>");
+	document.write("40-20-20-30="+(num4-num2-num2-num3)+"<br>");
+	document.write("10-10-20="+(num1-num1-num2)+"<br>");
+	document.write("10-20-30-40="+(num1-num2-num3-num4)+"<br>");
+	document.write("Conclusion:No difference between numerical or texual values"+"<br>");
+   }
+   function addition2(){
+ 
+	document.getElementById("id21").innerHTML=num1;
+	document.getElementById("id22").innerHTML=num2;
+	document.getElementById("id23").innerHTML=num2;
+	document.getElementById("id24").innerHTML=num1;
+	document.getElementById("res1").innerHTML=(num1+num2+num2+num1);
+	
+	document.getElementById("id31").innerHTML=num4;
+	document.getElementById("id32").innerHTML=num2;
+	document.getElementById("id33").innerHTML=num1;
+	document.getElementById("res2").innerHTML=(num4+num2+num1);
+	
+	document.getElementById("id41").innerHTML=num4;
+	document.getElementById("id42").innerHTML=num2;
+	document.getElementById("id43").innerHTML=num2;
+	document.getElementById("id44").innerHTML=num3;
+	document.getElementById("res3").innerHTML=(num4+num2+num2+num3);
+	
+	document.getElementById("id51").innerHTML=num1;
+	document.getElementById("id52").innerHTML=num2;
+	document.getElementById("id53").innerHTML=num2;
+	document.getElementById("res4").innerHTML=(num1+num1+num2);
+	
+	document.getElementById("id61").innerHTML=num1;
+	document.getElementById("id62").innerHTML=num2;
+	document.getElementById("id63").innerHTML=num3;
+	document.getElementById("id64").innerHTML=num4;
+	document.getElementById("res5").innerHTML=(num1+num2+num3+num4);
+	
+	
+   }
+      function substraction2(){
+   
+	document.getElementById("id71").innerHTML=num1;
+	document.getElementById("id72").innerHTML=num2;
+	document.getElementById("id73").innerHTML=num2;
+	document.getElementById("id74").innerHTML=num1;
+	document.getElementById("res6").innerHTML=(num1-num2-num2-num1);
+	
+	document.getElementById("id81").innerHTML=num4;
+	document.getElementById("id82").innerHTML=num2;
+	document.getElementById("id83").innerHTML=num1;
+	document.getElementById("res7").innerHTML=(num4-num2-num1);
+	
+	document.getElementById("id91").innerHTML=num4;
+	document.getElementById("id92").innerHTML=num2;
+	document.getElementById("id93").innerHTML=num2;
+	document.getElementById("id94").innerHTML=num3;
+	document.getElementById("res8").innerHTML=(num4-num2-num2-num3);
+	
+	document.getElementById("id101").innerHTML=num1;
+	document.getElementById("id102").innerHTML=num2;
+	document.getElementById("id103").innerHTML=num2;
+	document.getElementById("res9").innerHTML=(num1-num2-num2);
+	
+	document.getElementById("id201").innerHTML=num1;
+	document.getElementById("id202").innerHTML=num2;
+	document.getElementById("id203").innerHTML=num3;
+	document.getElementById("id204").innerHTML=num4;
+	document.getElementById("res10").innerHTML=(num1-num2-num3-num4);
+   }
+    </script> 
+  
+  </head> 
+  <body>
+ <h1>Addition - Substraction using .write() method</h1> 
+  <input type="button" value="Addition" onClick="addition()">
+  <input type="button" value="Substraction" onClick="substraction()">
+   
+  <h1>Addition - Substraction using .getElementById() method</h1> 
+  
+  
+  <input type="button" value="Display Addition" onClick="addition2()">
+  
+  
+  <p><b id="id21">?</b>+ <b id="id22">?</b>+<b id="id23">?</b>+<b id="id24">?</b>=<b id="res1">?</b></p>
+  <p><b id="id31">?</b>+ <b id="id32">?</b>+<b id="id33">?</b>=<b id="res2">?</b></p>
+  <p><b id="id41">?</b>+ <b id="id42">?</b>+<b id="id43">?</b>+<b id="id44">?</b>=<b id="res3">?</b></p>
+  <p><b id="id51">?</b>+ <b id="id52">?</b>+<b id="id53">?</b>=<b id="res4">?</b></p>
+  <p><b id="id61">?</b>+ <b id="id62">?</b>+<b id="id63">?</b>+<b id="id64">?</b>=<b id="res5">?</b></p>
+  
+  
+  <input type="button" value="Display Substraction" onClick="substraction2()">
+  
+  <p><b id="id71">?</b>- <b id="id72">?</b>-<b id="id73">?</b>-<b id="id74">?</b>=<b id="res6">?</b></p>
+   <p><b id="id81">?</b>- <b id="id82">?</b>-<b id="id83">?</b>=<b id="res7">?</b></p>
+    <p><b id="id91">?</b>- <b id="id92">?</b>-<b id="id93">?</b>-<b id="id94">?</b>=<b id="res8">?</b></p>
+   <p><b id="id101">?</b>- <b id="id102">?</b>-<b id="id103">?</b>=<b id="res9">?</b></p>
+   <p><b id="id201">?</b>- <b id="id202">?</b>-<b id="id203">?</b>-<b id="id204">?</b>=<b id="res10">?</b></p>
+  
+  
+  
+  </body> 
+</html>  
+ 
