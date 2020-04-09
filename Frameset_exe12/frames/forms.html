@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+ <html>   
+ <link rel="stylesheet" type="text/css" href="css/style11.css"/>
+ <style>
+ .field_set 
+ {
+border: purple  2px solid;background:violet;
+border-radius:15px;
+}
+.product_info
+{
+border: purple  2px solid;background:honeydew;
+border-radius:15px;
+}
+.options
+{
+border: purple  2px solid;background:cyan;
+border-radius:15px;
+}
+.numbers
+{
+border: purple  2px solid;background:lightcoral;
+border-radius:15px;
+}
+.user_details
+{
+border: purple  2px solid;background:lightpink;
+border-radius:15px;
+}
+.button1
+{
+    margin-right : 980px;
+	border-radius: 12px;
+}
+.reset
+{
+    
+	border-radius: 12px;
+}
+
+.submit
+{ 
+border: purple 2px solid;background-color: lightsalmon;
+   border-radius:15px;
+}
+
+
+</style>
+ <body> 
+ 
+<form action="action_page.asp" type="post" > 
+
+ 
+ <fieldset class="field_set" >
+ <legend>login</legend>
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username"  size = "25" maxlength="10" name="uname" required> 
+	<br><br>
+	<label for="psw"><b>Password</b></label>
+    <input type="text" placeholder="Enter Password"size = "25"  maxlength="10"  name="psw" required><br> 
+
+</fieldset >
+<fieldset class="product_info">
+ <legend>product Information</legend>
+    <label for="product"><b>Product-ID</b></label>
+    <input type="text" placeholder="enter id"  size = "25" maxlength ="10" name="Product" required> 
+	<br><br>
+	
+	<label for="name"><b>Product-Name</b></label>
+    <input type="text" placeholder="enter name"size = "25"  maxlength ="10" name="name" required><br><br>
+
+</fieldset>
+<fieldset class="options">
+ <legend>Options</legend>
+   <input type="radio" name="Color" value="ProdColor"> Blue<br>
+   <input type="radio" name="Color" value="ProdColor"> Red<br>
+   <input type="radio" name="Color" value="ProdColor"> Green<br>
+   <input type="radio" name="Color" value="ProdColor"> Black<br>
+   <input type="radio" name="Color" value="ProdColor"> White<br>   
+</fieldset>
+
+<fieldset class="numbers">
+<legend>Numbers</legend>
+<input type = "number" name = "number" min="1" max= "100">
+</fieldset>
+
+<fieldset class="user_details">
+<legend>User Details</legend>
+<label for="address"><b>Address</b></label>
+    <input type="text" placeholder="address"  size = "25" maxlength =  "10" name="address" required><br><br>
+	
+	<label for="City"><b>city</b></label>
+    <input type="text" placeholder="city"  size = "25" maxlength =  "10" name="city" required><br><br>
+	
+	<label for="State-Province"><b>State-Province</b></label>
+         
+             <select id = "myList">
+			   <option value = "1">select</option>
+               <option value = "2">Canada</option>
+               <option value = "3">USA</option>
+               <option value = "4">Mexico</option>
+                </select> <br><br>
+       
+	<label for="Postal-Code"><b>postal-code</b></label>
+    <input type="text" placeholder="postal-code"  size ="25" maxlength ="10" name="postal-code" required><br><br>
+	
+	<label for="Country"><b>country</b></label>
+    <input type="text" placeholder="country"size="25" maxlength ="10" name="country" required><br><br>	
+</fieldset>
+
+<fieldset class="submit">
+<legend>submitform</legend>
+
+    
+  <div>         
+      
+   <input class="button1" type="submit">
+
+
+    <input class="reset" type="reset"  >   </div>
+ 
+    
+
+</fieldset> 
+
+
+
+</form> 
+ 
+</body>
+ </html> 
