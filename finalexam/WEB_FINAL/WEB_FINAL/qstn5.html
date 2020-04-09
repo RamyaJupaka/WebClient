@@ -1,0 +1,126 @@
+<html>
+<head>
+    <title>question 5</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script src="taxes.js"></script>
+	<script>
+	function setCookie(cname, cvalue, exmins) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exmins * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            alert("cookie: " + cname + " value: " + cvalue + " was set for: " + exmins * 60 + " sec.");
+            document.cookie = "   " + cname + "=" + cvalue + "; " + expires;
+        }
+		function login() {
+            var flag = 1;
+            var v1 = document.getElementById("user").value;
+            var v2 = document.getElementById("pwd").value;
+
+            if (flag == 1) {
+                var obj1 = /^(\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3}))+$/;
+                var obj2 = /^(?=.[a-z])(?=.[A-Z])(?=.*[0-9]).{3,18}$/;
+                $(document).ready(function () {
+                    if (v1.length < 7 || v1.length > 36 || obj1.test(v1) == false) {
+                        $("#checkUser").show(); //showing message
+                        alert("email must be in correct format\n make sure email is between 8 to 35 charachter");
+                        document.getElementById("user").focus();
+                    }
+                    else {
+                        $("#checkUser").hide(); //hiding message
+                        setCookie('userMail', v1, 3)
+                    }
+                });
+
+                $(document).ready(function () {
+                    if (obj2.test(v2) == false) {
+                        $("#checkPw").show(); //showing message
+                        alert("Password must contain one uppercase one lowercase and one number");
+                        document.getElementById("pwd").focus();
+                    }
+                    else {
+                        $("#checkPwd").hide(); //hiding message
+                    }
+                });
+                flag = 0;
+            }
+
+            if (flag == 0) {
+
+            }
+        }
+
+        function userHide() {
+            $(document).ready(function () {
+                $("#checkUser").hide(); //hiding message
+            });
+            $(document).ready(function () {
+                $("#checkPwd").hide(); //hiding message
+            });
+        }
+
+    </script>
+	<style>
+	 body {
+            margin: 20px;
+            text-align: center;
+        }
+
+        form {
+            border: 1px solid green;
+            outline: 2px dotted blue;
+            outline-offset: 8px;
+            align-self: center;
+            border-radius: 5px;
+            margin:0% 30%;
+            padding: 5% 0% ;
+			height:200px;
+        }
+		table {
+            margin-top: 90px;
+            text-align: center;
+            border: 1px solid black;
+        }
+		th,td {
+            border: 1px solid black;
+            margin: 0%;
+            padding: 5px;
+			}
+		</style>
+</head>
+<body onload="userHide()">
+<form  >
+   
+    <div class="container">
+      <label><b>Email : </b></label>
+      <input id="user" type="text" placeholder="Email" autofocus required />
+	  <span id="checkUser" style="color: red">Invalid email</span><br><br>
+
+      <label><b>Password</b></label>
+      <input id="pwd" type="password" style="margin-left: 12px" placeholder="Pasword" required />
+	   <span id="checkPwd" style="color: red">Invalid Password</span><br><br>
+	   <input type="button" value="Login" onclick="login()">
+</form>
+<table>
+<table style="text-align: center;" align="center">
+   <tr>
+   <th>College Name</th>
+   <th>Course Code</th>
+   <th>Group No.</th>
+   <th>Course Name</th>
+   <th>Session</th>
+ </tr>
+ <tr>
+  <td><a href="https://www.lasallecollege.com/" target="blank_">Lasalle</a></td>
+  <td>420-CT2-AS</td>
+  <td>7028</td>
+  <td>Web Client Development</td>
+  <td>Summer 2019</td>
+ </tr>
+ <tr>
+ <th colspan="5" style="text-align: right;"><a href="https://www.lasallecollege.com/"target="blank_">Copyright 2019</a></th>
+   </tr>
+    </table>
+</table>
+</body>
+</html>

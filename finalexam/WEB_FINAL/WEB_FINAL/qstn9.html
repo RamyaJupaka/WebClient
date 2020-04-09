@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+	<script>
+    function changeColor(o){
+        o.style.backgroundColor=(o.style.backgroundColor=='red')?('transparent'):('red');
+    }
+	function myFunction() {
+  var str = " ";
+  var n = str.charCodeAt(0);
+  document.getElementById("table1").innerHTML = n;
+}
+function myFunction2() {
+  var x = document.getElementById("table1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<style>
+#div
+{
+float:middle;
+}
+</style>
+</head>
+
+<body>
+    <table border="1px" align="center" style="border-collapse: collapse" id="table1">
+        <tr>
+            <td>R</td>
+            <td>A</td>
+            <td>M</td>
+            <td>Y</td>
+			<td>A</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>1</td>
+            <td>13</td>
+            <td>25</td>
+			<td>1</td>
+			
+
+        </tr>
+    </table>
+
+    </br>
+    </br>
+    <div id="div">
+<button onclick="myFunction2()" align="center"> Hide&Show </button>
+<button onclick="replace(table1)" align="center">replace id</button>
+<button onclick="changeColor(table1)" align="center">changecolor</button>
+<button onclick="myFunction(table1)" align="center">sum</button>
+</div>
+
+</body>
+
+</html>

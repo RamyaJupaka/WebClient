@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>second page</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="./jquery/jquery-3.4.1.min.js"></script>
+<script>
+        function validate() {
+            $(document).ready(function () {
+                $("#valid1").hide();
+            });
+            $(document).ready(function () {
+                $("#valid2").hide();
+            });
+            $(document).ready(function () {
+                $("#valid3").hide();
+            });
+            $(document).ready(function () {
+                $("#message").hide();
+            });
+        }
+
+        function calculate() {
+            var flag = 1;
+            var m1 = parseFloat(document.getElementById("mid").value);
+            var m2 = parseFloat(document.getElementById("project").value);
+            var m3 = parseFloat(document.getElementById("final").value);
+
+            if (m1 <= 0 || m1 >= 30) {
+                $(document).ready(function () {
+                    $("#valid1").show();
+                    document.getElementById("mid").value = 0;
+                });
+                $(document).ready(function () {
+                    $("#message").show();
+                });
+                flag = 0;
+            }
+
+            if (m2 <= 0 || m2 >= 30) {
+                $(document).ready(function () {
+                    $("#valid2").show();
+                    document.getElementById("project").value = 0;
+                });
+                $(document).ready(function () {
+                    $("#message").show();
+                });
+                flag = 0;
+            }
+
+            if (m3 <= 0 || m3 >= 40) {
+                $(document).ready(function () {
+                    $("#valid3").hide();
+                    document.getElementById("final").value = 0;
+                });
+                $(document).ready(function () {
+                    $("#message").show();
+                });
+                flag = 0;
+            }
+
+
+            if (flag == 1) {
+                var total = m1 + m2 + m3;
+                document.getElementById("total").innerHTML = total.toFixed(3);
+                if (total >= 60) {
+                    $(document).ready(function () {
+                        $("#message").show();
+                    });
+                }
+
+            }
+        }
+    </script>
+<style>
+table,th,td 
+{
+   border: 1px solid black;
+   float:middle;
+   }
+   .btn
+   {
+   margin :10px;
+   }
+
+        
+</style>
+</head>
+
+<body onload="validate()">
+ <table style="text-align:center;">
+ <tr>
+ <th>Student Name</th>
+ <th>Student ID</th>
+ <th>Exams -Date -Weighting</th>
+ <th>Grades</th>
+ </tr>
+ <tr>
+ <td rowspan="2">Ramya</td>
+ <td rowspan="4">1834243</td>
+ <td>Midterm -2019-06-19 -30%</td>
+ <td><input type="text" value="0" id="mid" /><span id="valid1" style="color: red">Invalid</span>
+ </tr>
+ <tr>
+ <td>Project -2019-06-19 -30%</td>
+ <td><input type="text" value="0" id="project" /><span id="valid2" style="color: red">Invalid</span>
+</tr>
+
+<tr>
+  <td rowspan="2">Jupaka</td>
+ <td>Final -2019-06-19 -40%</td>
+ <td><input type="text" value="0" id="final" /><span id="valid3" style="color: red">Invalid</span>
+ </tr>
+ 
+ <tr>
+ <td>Total        -40%</td>
+<td><span id="total">0</span></td>
+</tr> </table>
+
+<div class="btn">
+        <button type="button" onclick="calculate()">Calculate Total</button>
+    </div>
+<span id="message" style="color: black; text-align: center;">Congratulation(passed)</span>
+
+
+</body>
+</html>
