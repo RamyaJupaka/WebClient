@@ -1,0 +1,106 @@
+<html>
+<head>  
+
+  <script type="text/javascript">
+  var returnValue;
+  function test()
+  {
+  var str;
+  str = document.getElementById("id1").value;
+  alert("The entered string:"+str);
+  str=str.toUpperCase();
+  alert("The string in UpperCase:"+str);
+  document.getElementById("id2").innerHTML=str;
+   
+    }
+function test1()
+  { 
+  var str1;
+str1 = document.getElementById("id3").value;
+  alert("The entered string:"+str1);
+  str1 = str1.toLowerCase();
+  alert("The string in LowerCase:"+str1);
+  document.getElementById("id4").innerHTML=str1;
+}
+function test2()
+  { 
+  var num1,num2, res;
+  
+num1 = document.getElementById("id6").value;
+  num2 = document.getElementById("id7").value;
+  res=(parseInt(num1)+parseInt(num2));
+  document.getElementById("id8").innerHTML=res;
+}
+function test3()
+  { 
+  var num3,num4,res1;
+  
+num3 = document.getElementById("id9").value;
+  num4 = document.getElementById("id10").value;
+  res1=(parseFloat(num3)+parseFloat(num4));
+  document.getElementById("id11").innerHTML=res1;
+}
+</script> 
+  
+  </head> 
+  <body>
+  <h1>Web page with JS(.value-.innerHTML)</h1> 
+<div style="border:1px solid silver ; width:800px">
+<table>
+<tr>
+  <td>Your text in lower case </td>
+ <td> <input id="id1" style="color:green" type="text" value="your text"></td>
+  <td id="id5">--> TO UPPERCASE:</td>
+  <td><input type="button"  value="toUpperCase()" onclick="test()" /></td>
+   
+  
+  
+ <td id="id2" style="color:red">
+ <br><br><br></td>
+ </tr>
+ 
+ <tr>
+ <td>Your text in upper case</td> 
+  <td><input id="id3" style="color:green" type="text" value="YOUR TEXT"></td>
+  <td>--> TO LowerCASE:</td>
+  <td ><input type="button"  value="toLowerCase()" onclick="test1()" /></td>
+   
+  
+  
+  <td id="id4" style="color:red">
+ <br><br><br></td>
+ </tr>
+ </table>
+ </div>
+  <div style="border:1px solid silver ; width:800px">
+<table>
+<tr>
+  <td>Var1 (integer): </td>
+ <td> <input id="id6" style="color:green" type="text" value="15"></td>
+  <td > + Var2(integer):</td>
+   <td> <input id="id7" style="color:green" type="text" value="5.9"></td>
+  <td><input type="button"  value="=" onclick="test2()" /></td>
+   
+  
+  
+ <td id="id8" style="color:red">
+ <br><br><br></td>
+ </tr>
+ 
+ <tr>
+ <td>Var1(float):</td> 
+  <td><input id="id9" style="color:green" type="text" value="15.4"></td>
+  <td>+Var2(float):</td>
+  <td><input id="id10" style="color:green" type="text" value="5.9"></td>
+  
+  <td ><input type="button"  value="=" onclick="test3()" /></td>
+   
+  
+  
+  <td id="id11" style="color:red">
+ <br><br><br></td>
+ </tr>
+ </table>
+ </div>
+  </body> 
+</html> 
