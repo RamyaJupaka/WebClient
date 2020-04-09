@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head> 
+
+<title>Wilf Life</title>
+
+<style>
+		body
+		{
+		 background-image: url("./images/sky.jpg");
+		 background-size: cover;
+		  background-position: center; 
+			background-repeat: no-repeat;
+			  background-attachment: fixed;
+		}
+
+				#map{
+					background-color: #e0ffff;
+					text-align: center;
+					font-size: 50px;
+					color: blue;
+				}
+
+				#animal{
+					border: 1px solid black;
+					text-align: center;
+					  border-radius: 25px;
+
+				}
+				.nameofanimal{
+					font-weight: bold;
+					font-size: 20px;
+					font-style: normal;
+					color:white;
+				}
+				img{
+					margin:20px 0;
+
+				}
+				.show{
+					width: 31%;
+					float: left;
+					border: 1px solid black;
+					margin: 20px 0 30px 0;
+					  border-radius: 25px;
+					text-align: center;
+					padding:10px 10px 10px 10px;
+					height: 200px;
+					font-weight:bold;
+				}
+				#description
+				{
+				color:wheat;
+				}
+				
+				.img{
+					width: 100%;
+					height:90%;
+					}
+
+			
+</style>
+</head>
+<body >
+	<h1 style="text-align:center;color:yellowgreen">
+		Wild life 
+	</h1>
+	<div id="map">
+	<p> Animal Family</p>
+	</div>
+	<div id="animal">
+		<img src="./images/animals.jpg" width="650" height="990" alt="animals" usemap="#animalmap">
+			<map name="animalmap">
+			  <area shape="poly" coords="196,106,210,107,216,121,226,130,234,132,261,148,305,166,330,196,272.200,211,187,150,166,178,155,173,122" href="https://en.wikipedia.org/wiki/Lion" title="Simba and Nala (The Liong King)" alt="not_found">
+
+			  <area shape="poly" coords="225,229,241,229,250,223,258,228,258,237,271,232,287,236,303,256,303,284,277,292,257,300,240,319,231,341,217,341,214,313,202,294,190,259,200,243,200,224" href="https://en.wikipedia.org/wiki/Bengal_tiger" title="Bengal tiger" alt="not_found">
+
+			  <area shape="poly" coords="336,242,351,250,371,249,388,253,407,243,416,261,425,305,411,343,396,360,386,392,367,386,351,397,351,430,345,443,325,440,308,422,310,390,278,382,247,378,233,366,239,318,271,298,301,303,322,288" href="https://en.wikipedia.org/wiki/White_tiger" title="White Bengal tiger" alt="not_found">
+
+			  <area shape="poly" coords="203,386,218,392,233,387,255,387,275,399,293,394,290,419,288,437,312,458,347,478,454,495,480,496,510,503,550,525,569,553,456,614,446,635,425,628,440,607,454,595,452,585,444,576,419,573,378,573,325,565,263,577,237,574,228,541,222,502,223,472,217,451,203,421" href="https://en.wikipedia.org/wiki/Cheetah" title="African Leopard" alt="not_found">
+
+			  <area shape="poly" coords="369,390,379,395,379,413,379,423,382,438,387,480,359,473,356,468,350,455,354,439,359,416,354,405,362,393" href="https://en.wikipedia.org/wiki/Meerkat" title="meerkat (Ice Age)" alt="not_found">
+
+			  <area shape="poly" coords="441,427,450,426,460,433,463,442,460,446,460,463,456,487,436,490,416,487,428,455,432,452,435,433" href="https://en.wikipedia.org/wiki/Meerkat" title="Shadow of meerkat" alt="not_found">
+
+			  <area shape="poly" coords="477,312,498,324,502,343,501,364,497,377,509,393,523,414,501,423,483,434,471,444,465,432,455,421,439,420,419,424,399,415,393,406,405,373,423,346,439,343" href="https://en.wikipedia.org/wiki/Gorilla" title="Gorilla (Rise of the Planet of the Apes)" alt="not_found">
+
+			  <area shape="poly" coords="588,404,609,423,613,444,627,462,613,606,618,618,634,635,622,650,609,647,614,620,591,566,588,558,573,548,543,509,503,495,468,492,484,454,503,422,546,417" href="https://en.wikipedia.org/wiki/Orangutan" title="Orangutan (Rise of the Planet of the Apes)" alt="not_found">
+
+			  <area shape="poly" coords="565,284,579,296,594,311,604,314,613,308,607,292,626,269,630,279,621,285,630,307,622,324,613,330,632,340,633,347,613,343,596,340,581,348,572,359,569,399,540,406,532,394,523,396,508,363,505,343,493,312" href="https://en.wikipedia.org/wiki/Elephant" title="Manny (Ice Age)" alt="not_found">
+
+			  <area shape="poly" coords="86,217,91,227,108,240,173,310,184,327,206,343,193,371,169,354,141,338,120,327,87,254,74,262,43,267,49,253,62,243," href="https://en.wikipedia.org/wiki/Giraffe" title="giraffe (Madagascar)" alt="not_found">
+
+			  <area shape="poly" coords="185,385,164,361,141,348,115,361,90,358,105,380,93,401,102,418,99,453,108,463,127,462,135,440,140,440,139,461,144,483,152,502,171,501,183,495,205,492,211,478,212,452,202,423" href="https://en.wikipedia.org/wiki/Zebra" title="zebra (Madagascar)" alt="not_found">
+
+			  <area shape="poly" coords="18,431,40,441,53,421,78,398,98,391,93,403,98,415,98,440,98,456,111,471,129,464,137,482,146,501,116,528,97,556,88,563,84,581,75,607,51,610,52,584,38,561,19,556" href="https://en.wikipedia.org/wiki/Rhinoceros" title="rhino (Madagascar)" alt="not_found">
+
+			  <area shape="poly" coords="178,504,212,518,223,540,224,557,232,586,212,603,197,621,168,616,160,611,152,622,171,647,188,676,204,721,174,732,157,703,112,667,103,637,84,638,75,633,127,531" href="https://en.wikipedia.org/wiki/Chimpanzee" title="chimpanzee (Rise of the Planet of the Apes)" alt="not_found">
+
+			  <area shape="poly" coords="60,654,74,649,84,649,92,642,101,653,101,666,99,685,115,728,151,739,185,773,511,889,554,870,580,877,609,887,553,929,493,915,434,923,370,935,226,944,193,947,104,871,100,820,94,806,75,758,70,689,75,666,58,656" href="https://en.wikipedia.org/wiki/Peafowl" title="Peacock" alt="not_found">
+			</map>
+	</div>
+	<!-- <div class="scroll">
+		<p> search any animal by click on image or in search box</p>
+	</div> -->
+	
+	<div style="margin-top: 10px;text-align: center; color:black; font-size:20px"><label>Enter the name of animal</label><br><br>	
+		<input id="inputtext" type="text" /><br><br>	
+		<input id="btnsearch" type="button" value="Search" onclick="search()" />
+	</div>
+			
+		<div style="margin-left: 400px">
+			<div class="show">
+				<a id="name" class="nameofanimal">Animal Name</a>
+				<p id="description">Animal Description</p>
+			</div>
+			<div class="show">
+				
+				<img  id="pic" class="img">
+			</div>
+		</div>
+
+	<script>		
+		
+		function search() 
+		{
+				var text=document.getElementById("inputtext").value;
+				text=text.toLowerCase();
+			if(text=="lion")
+			{
+				document.getElementById("name").innerHTML="Lion";
+				document.getElementById("description").innerHTML="Lions live in Africa south of the Sahara and in Northwest India. Lions don't actually live in the jungle. Their real habitat is the open savanna where they hunt mammals such as gazelles, antelope, and zebra." 
+				document.getElementById("pic").src="./images/lion.jpg";
+			}
+			else if(text=="tiger")
+			{
+				document.getElementById("name").innerHTML="Tiger";
+				document.getElementById("description").innerHTML="The tiger (Panthera tigris) is the largest species among the Felidae and classified in the genus Panthera."
+				document.getElementById("pic").src="./images/tiger.jpg";
+			}
+			else if(text=="whitetiger")
+			{
+				document.getElementById("name").innerHTML="whitetiger";
+				document.getElementById("description").innerHTML="The tiger (Panthera tigris) is the largest species among the Felidae and classified in the genus Panthera.";
+				document.getElementById("pic").src="./images/whitetiger.jpg";
+			}
+			else if(text=="cheetah")
+			{
+				document.getElementById("name").innerHTML="cheetah";
+				document.getElementById("description").innerHTML="The cheetab%till survives in Iran, but with a gloomy fu- to reduce the impact. Cheetahs, which had survived on hareture.  ";
+				document.getElementById("pic").src="./images/cheetah.jpg";
+			}
+			else if(text=="sid")
+			{
+				document.getElementById("name").innerHTML="sid";
+				document.getElementById("description").innerHTML="The meerkat or suricate (Suricata suricatta) is a small carnivoran belonging to the mongoose family (Herpestidae). It is the only member of the genus Suricata. Meerkats live in all parts of the Kalahari Desert in Botswana.";
+				document.getElementById("pic").src="./images/sid.jpg";
+			}
+			else if(text=="monkey")
+			{
+				document.getElementById("name").innerHTML="monkey";
+				document.getElementById("description").innerHTML="Monkey is a common name that may refer to groups or species of mammals, in part, the simians of infraorder Simiiformes.  ";
+				document.getElementById("pic").src="./images/monkey.jpg";
+			}
+			else if(text=="chimpanzee")
+			{
+				document.getElementById("name").innerHTML="chimpanzee";
+				document.getElementById("description").innerHTML="The chimpanzee (Pan troglodytes), also known as the common chimpanzee, robust chimpanzee,is a species of great ape native to the forests and savannahs of tropical Africa. It has four confirmed subspecies and a fifth proposed subspecies.";
+				document.getElementById("pic").src="./images/chimpanzee.jpg";
+			}
+			else if(text=="elephant")
+			{
+				document.getElementById("name").innerHTML="elephant";
+				document.getElementById("description").innerHTML="Resurgence of illicit trade in African elephant ivory is placing the elephant at renewed risk.Regulation of this trade could be vastly improved by the ability to verify the geographic origin of tusks.";
+				document.getElementById("pic").src="./images/elephant.jpg";
+			}
+			else if(text=="giraffe")
+			{
+				document.getElementById("name").innerHTML="giraffe";
+				document.getElementById("description").innerHTML="The giraffe (Giraffa) is a genus of African even-toed ungulate mammals, the tallest living terrestrial animals and the largest ruminants. Taxonomic classifications of one to eight extant giraffe species have been described.";
+				document.getElementById("pic").src="./images/giraffe.jpg";
+			}
+			else if(text=="gorilla")
+			{
+				document.getElementById("name").innerHTML="gorilla";
+				document.getElementById("description").innerHTML="The gorilla (Pan troglodytes), also known as the common chimpanzee, robust chimpanzee,is a species of great ape native to the forests and savannahs of tropical Africa. It has four confirmed subspecies and a fifth proposed subspecies.";
+				document.getElementById("pic").src="./images/chimpanzee.jpg";
+			}
+			else if(text=="peacock")
+			{
+				document.getElementById("name").innerHTML="peacock";
+				document.getElementById("description").innerHTML="Peafowl is a common name for three species of birds in the genera Pavo and Afropavo of the Phasianidae family, the pheasants and their allies.";
+				document.getElementById("pic").src="./images/peacock.jpg";
+			}
+			else if(text=="rhino")
+			{
+				document.getElementById("name").innerHTML="rhino";
+				document.getElementById("description").innerHTML="A rhinoceros (/raɪˈnɒsərəs/, from Greek rhinokerōs, meaning 'nose-horned', from rhis, meaning 'nose', and keras, meaning 'horn'), commonly abbreviated to rhino, is one of any five extant species of odd-toed ungulates in the family Rhinocerotidae";
+				document.getElementById("pic").src="./images/rhino.jpg";
+			}
+			else if(text=="zebra")
+			{
+				document.getElementById("name").innerHTML="zebra";
+				document.getElementById("description").innerHTML="There are three species of zebras:the plains zebra, the mountain zebra and the Grévy's zebra. .";
+				document.getElementById("pic").src="./images/zebra.jpg";
+			}
+			
+		}
+	</script>
+	
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+</html>

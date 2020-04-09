@@ -1,0 +1,64 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>Elephant page</title>
+	<meta charset="UTF-8">
+	<style >
+	.item {
+            display: flex;
+            align-items: center;
+            /*justify-content: center;*/
+           /* border: 1px solid #fff;*/
+            /*border-radius: 1.2rem;*/         
+           /* min-height: 4rem;*/
+            padding: .75rem;
+            color: white;
+            
+        }
+		.ch{
+            word-spacing: 10px;
+            line-height: 2em;
+            text-indent: 2em;
+            font-style: italic;
+        }
+		.container{
+            display: grid;
+            grid-template-areas:"content sidebar"
+                        
+            grid-template-rows: 177px 1fr 175px;
+           
+        }
+		.img
+	{
+	background-image: url("../images/elephant.jpg");
+	 background-size: cover;
+  background-position: center; 
+    background-repeat: no-repeat;
+	  background-attachment: fixed;
+
+
+	}
+	
+	</style>
+	</head>
+	<body class="img">
+	
+	<div class="container">
+	
+	<main class="item" style="display: block;">
+	 <h3 style="font-weight: bold;font-size: 38px;">Elephant</h3>
+            <p class="ch" style="font-size: 38px;">Resurgence of illicit trade in African elephant ivory is placing the elephant at renewed risk. <br>
+			Regulation of this trade could be vastly improved by the ability to verify the geographic origin of tusks.
+			We address this need by developing a combined genetic and statistical method to determine the origin of poached ivory.<br>
+			Our statistical approach exploits a smoothing method to estimate geographic-specific allele frequencies over the entire African elephants' range for 16 microsatellite loci,
+			using 315 tissue and 84 scat samples from forest (Loxodonta africana cyclotis) and savannah (Loxodonta africana africana) 
+			elephants at 28 locations. These geographic-specific allele frequency estimates are used to infer the geographic origin of DNA samples,
+			such as could be obtained from tusks of unknown origin. 
+			We demonstrate that our method alleviates several problems associated with standard assignment methods in this context,
+			and the absolute accuracy of our method is high.<br>
+</p>
+    </main>
+	
+	</div>
+
+	</body>
+	</html>

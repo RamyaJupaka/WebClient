@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+ <html>   
+   <head>    
+   <title>Registeration Form</title>  
+  
+ </head>
+
+ 
+ <style>
+ *
+ {
+ margine:0;
+ padding:0;
+ }
+ h1
+ {
+ text-align:center;
+ padding
+ }
+ .register
+ {
+ margin:10px 300px 100px 400px;
+ color:black;
+ font-size:18px;
+ text-align:center;
+ border-radius:8px;
+ }
+ .bg-img
+ {
+  background-image: url("./images/dragon.jpg");
+
+ }
+ </style>
+ 
+ <body class="bg-img">
+ <h1>Registeration Form</h1>
+ 
+ <div class="register" style="background-color:#ffcccc" width="500px" >
+ 
+ 
+ <form method="post" id="register" action="">
+ <h2>Register Here</h2>
+ 
+		 <label>First Name</label><br>
+		 <input type="text" id="fname" placeholder="Enter FirstName"><br><br>
+		 
+		<!--   <label>Middle Name</label><br>
+		   <input type="text" name="name" id="name" placeholder="Enter MiddleName"><br><br>-->
+
+		 <label>Last Name</label><br>
+		  <input type="text" name="name" id="lname" placeholder="Enter LastName"><br><br> 
+
+		 <label>Gender</label><br>
+		 <input type="radio" name="gender" id="Female">Female &nbsp
+		   <input type="radio" name="gender" id="Male">Male<br><br>
+		 <label>e-mail</label><br>
+			<input type="text" name="email" id="email" placeholder="Enter e-mail"><br><br>
+
+		 <label>Phone</label><br>
+		  <input type="number" name="phone" id="number" placeholder="Enter Mobile Number"><br><br>
+
+		 <label>Address</label><br>
+		  <input type="text" name="address" id="address" placeholder="Enter address"><br><br>
+
+		 <label>City</label><br>
+			 <input type="text" name="city" id="city" placeholder="Enter city"><br><br>
+
+		 <label>Province</label><br>
+		  <input type="text" name="province" id="province" placeholder="Enter province"><br><br>
+
+		 
+		 <label>Country</label><br>
+		 <input type="text" name="country" id="country" placeholder="Enter country"><br><br>
+
+		 
+		  <label>PostalCode</label><br>
+		   <input type="text" name="postalcode" id="postalcode" placeholder="Enter postalcode"><br><br>
+
+		<input type="button" value="submit" 
+				 onclick="submit1()" />
+
+		<!--     <input class="reset button1"  type="reset"  > -->
+		 </form>
+	</div>
+		  
+  <script>
+ 
+	function submit1(){
+	
+		var patt = /^([A-Z][a-z]{2,})((\s[A-Z][a-z]{1,}){0,1})$/ ;
+		var Fname = document.getElementById("fname").value;
+		if(patt.test(Fname) == false){
+			alert("The name: " + fname + " is not valid." +
+			      "\nEnter one or two words, (Fname )");
+		
+		}
+		else{alert("The name: " + fname +" is valid.");
+		}	
+		var patt = /^([A-Z][a-z]{2,})((\s[A-Z][a-z]{1,}){0,1})$/ ;
+		var Lname = document.getElementById("lname").value;
+		if(patt.test(Lname) == false){
+			alert("The name: " + lname + " is not valid." +
+			      "\nEnter one or two words, (Lname )");	
+		}
+		else{alert("The name: " + lname +" is valid.");}	
+
+ }
+	
+	</script>
+</body>
+ </html> 

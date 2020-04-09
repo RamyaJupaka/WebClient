@@ -1,0 +1,56 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>chimpanzee page</title>
+	<meta charset="UTF-8">
+	<style >
+	.item {
+            display: flex;
+            align-items: center;
+            
+            padding: .75rem;
+            color:#e6ffff;
+        }
+		.ch{
+            word-spacing: 10px;
+            line-height: 2em;
+            text-indent: 2em;
+            font-style: italic;
+        }
+		.container{
+            display: grid;
+            grid-template-areas:"content sidebar"
+                        
+            grid-template-rows: 177px 1fr 175px;
+           
+        }
+		.img
+	{
+	background-image: url("../images/chimpanzee.jpg");
+	 background-size: cover;
+  background-position: center; 
+    background-repeat: no-repeat;
+	  background-attachment: fixed;
+
+
+	}
+	
+	</style>
+	</head>
+	<body class="img">
+	
+	<div class="container">
+	
+	<main class="item" style="display: block;">
+	 <h3 style="font-weight: bold;font-size: 38px;">Chimpanzee</h3>
+            <p class="ch" style="font-size: 38px;">The chimpanzee (Pan troglodytes), also known as the common chimpanzee, robust chimpanzee, or simply "chimp", is a species of great ape native to the forests and savannahs of tropical Africa. 
+			It has four confirmed subspecies and a fifth proposed subspecies. The chimpanzee and the closely related bonobo (sometimes called the "pygmy chimpanzee") are classified in the genus Pan. Evidence from fossils and DNA sequencing shows that Pan is a sister taxon to the human lineage and are humans' closest living relatives.
+
+The chimpanzee is covered in coarse black hair, but has a bare face, fingers, toes, palms of the hands, and soles of the feet. It is larger and more robust than the bonobo, weighing 40–60 kg (88–132 lb) for males and 27–50 kg (60–110 lb) for females and standing 100 to 170 cm (3.3 to 5.6 ft). Its gestation period is eight months. 
+he infant is weaned at about three years old, but usually maintains a close relationship with its mother for several years more. It lives in groups which range in size from 15 to 150 members, although individuals travel and forage in much smaller groups during the day. The species lives in a strict male-dominated hierarchy, where disputes are generally settled without the need for violence. Nearly all chimpanzee populations have been recorded using tools, modifying sticks, rocks, grass and leaves and using them for acquiring honey, termites, ants, nuts and water. 
+The species has also been found creating sharpened sticks to spear small mammals.</p>
+    </main>
+	
+	</div>
+
+	</body>
+	</html>
